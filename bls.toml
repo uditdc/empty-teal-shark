@@ -1,0 +1,19 @@
+name = "empty-teal-shark"
+version = "1.0.0"
+type = "site"
+content_type = "html"
+
+[deployment]
+nodes = 1
+
+[build]
+dir = ".bls"
+public_dir = "dist"
+entry = "empty-teal-shark_debug.wasm"
+command = "npm run build"
+
+[build_release]
+dir = ".bls"
+public_dir = "dist"
+entry = "empty-teal-shark.wasm"
+command = "npm run build"
