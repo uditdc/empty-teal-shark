@@ -5,6 +5,7 @@ content_type = "html"
 
 [deployment]
 nodes = 1
+permissions = ["https://reqres.in"]
 
 [build]
 dir = ".bls"
